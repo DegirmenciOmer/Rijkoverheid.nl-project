@@ -1,6 +1,7 @@
+
 * {
 	box-sizing: border-box;
-	font-family: 'Ropa Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif; /*font-family: 'Source Sans Pro', sans-serif;*/
 	list-style: none;
 	text-decoration: none;
 }
@@ -8,19 +9,24 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color:#f3f3f3;
 }
 
 p {
 	color:#000;
-	font-size: 1em;
+	font-size: .9em;
 	line-height: 1.375em;
+}
+
+header {
+	margin-left: 45%;
 }
 
 #navbar {
 	background: #01689b;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding: px;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -30,7 +36,7 @@ p {
 }
 
 #topmenu li {
-	margin-left: 15px;
+	margin-left: 25px;
 }
 
 #navbar a {
@@ -43,25 +49,44 @@ p {
 
 #showcase {
 	padding: 12px;
-	background-image: url(sky.jpg) 
+	background-image: url(wash.jpg);
+	background-size: cover;
+	background-position-y: 40%;
 }
 
 #tasklist {
 	float: left;
-  width: 33.3%;
+  width: 40.3%;
 	background: #fff;
+	line-height: 1.6em;
+	font-weight: bold;
+	color: #01689b;
+	padding-right: 5px;
 }
 
 #tasklist li:before {
-	content: '>  '
+	content: '>  ';
+	margin-left: -20px;
+	margin-right: 9px;
+}
+
+#tasklist a {
+	color: #01689b;
 }
 
 #tasklist h2 {
 	margin-left: 38px;
 }
 
+#showcase p {
+	color: #fff;
+	transform: translate(4px, 12px);
+	font-size: 12px;
+}
+
 .clear {
-	clear :both
+	clear :both;
+	
 }
 
 #graynav {
@@ -74,10 +99,12 @@ p {
 #graynav ul {
 	display: flex;
 	flex-wrap: wrap;
+	width: 96%;
 }
 
-#graynav li {
-	width: 33.3%
+#graynav a {
+	width: 31.3%;
+	margin: 5px 1% 5px 1%;
 }
 
 #graynav h3 {
@@ -197,9 +224,12 @@ footer .wrapper {
 	justify-content: space-around;
 }
 
-footer .languages {
+
+footer .languages ul {
 	background: #fff;
 	color: #000;
 	display: flex;
+	align-items: center;
+  	justify-content: space-evenly;
 }
 
