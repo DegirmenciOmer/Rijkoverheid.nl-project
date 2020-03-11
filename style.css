@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Ropa Sans', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color:#000;
+	font-size: 1em;
+	line-height: 1.375em;
+}
+
+#navbar {
+	background: #01689b;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#topmenu {
+	display: flex;
+}
+
+#topmenu li {
+	margin-left: 15px;
+}
+
+#navbar a {
+	color: #fff;
+}
+
+#navbar a:hover {
+	border-bottom: .12rem solid #fff;
+}
+
+#showcase {
+	padding: 12px;
+	background-image: url(sky.jpg) 
+}
+
+#tasklist {
+	float: left;
+  width: 33.3%;
+	background: #fff;
+}
+
+#tasklist li:before {
+	content: '>  '
+}
+
+#tasklist h2 {
+	margin-left: 38px;
+}
+
+.clear {
+	clear :both
+}
+
+#graynav {
+	background: #ededf0;
+	position: relative;
+	top: -15px;
+	margin: -1px -22px 40px -22px;
+}
+
+#graynav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#graynav li {
+	width: 33.3%
+}
+
+#graynav h3 {
+	color: #01689b;
+}
+
+#uitgelicht {
+	margin: 0 50px 42px 50px;
+}
+
+.image3 {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.image3 .imgitem {
+	width:33.3%;
+	display: flex;
+	flex-direction: column;
+	padding:0 15px 10px 15px;
+}
+
+.image3 h3 {
+	color: #01689b;
+	font-size: 1.75rem;
+	line-height: 2rem;
+
+}
+.imgitem img {
+	height: 250px;
+}
+#uitgelicht .image3 .imgitem span {
+	position:relative;
+	top: -30px;
+	left: 15px;
+	color: #fff;
+}
+
+#nieuws {
+	margin: 0 50px 42px 50px;
+
+}
+
+.more {
+	clear: both;
+	float: left;
+	text-decoration: none;
+	position: relative;
+	display: block;
+	padding-left: 20px;
+	font-weight: bold;
+	color: #01689b;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-decoration: none;
+    width: auto;
+    margin: 25px 0 25px 5px;
+}
+
+.more::before {
+	content: '>  ';
+		margin-right: 5px;		
+}
+
+.boxes {
+	display: flex;
+}
+ 
+ .box {
+ 	border: 2px solid rgba(1, 85, 127,.4);
+ 	margin-left: 30px; 
+ 	width: 250px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-flow: column wrap; 
+ 	line-height: 2rem;	
+ }
+
+.box #vra {
+	color: #01689b;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.bel {
+	font-size: 26px;
+}
+
+.box #num {
+	color: #01689b;
+	font-weight: bolder;
+	font-size: 34px;
+}
+
+.box #mel {
+	font-size: 22px;
+	margin-bottom: 3vw
+}
+
+.box .nie {
+	color: #a90061;
+	font-weight: bolder;
+	font-size: 34px;
+}
+
+footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+footer .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	background: #01689b;
+	color: #fff;
+	justify-content: space-around;
+}
+
+footer .languages {
+	background: #fff;
+	color: #000;
+	display: flex;
+}
+
