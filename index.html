@@ -10,23 +10,24 @@
 	<header>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Logo_rijksoverheid_met_beeldmerk.svg" alt="Rijksoverheid" id="logo">	
 	</header>
-	<section id="navbar">
-		<div id="home"><h2><a href="">Home</a></h2>
+	<nav id="navbar">
+		<!--https://codepen.io/mutedblues/pen/MmPNPG  // reference for hamburger nav menu// -->
+		<div id="home">
+			<h2><a href="">Home</a></h2>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 		</div>
-		<nav id="mainnav">
-			<ul id="topmenu">
-				<li><a class="topli" href="">Actueel</a></li>
-				<li><a class="topli" href="">Onderwerpen</a></li>
-				<li><a class="topli" href="">Ministeries</a></li>
-				<li><a class="topli" href="">Regering</a></li>
-				<li><a class="topli" href="">Documenten</a></li>
-				<li><a class="topli" href="">Doe Mee</a></li>
-			</ul>
-		</nav>
-	</section>
-			<div class="srcbtn">				
-			</div>	
-		
+		<ul id="topmenu">
+			<li><a class="topli" href="">Actueel</a></li>
+			<li><a class="topli" href="">Onderwerpen</a></li>
+			<li><a class="topli" href="">Ministeries</a></li>
+			<li><a class="topli" href="">Regering</a></li>
+			<li><a class="topli" href="">Documenten</a></li>
+			<li><a class="topli" href="">Doe Mee</a></li>
+		</ul>
+	</nav>
+	<div class="srcbtn">				
+	</div>		
 	</div>
 	<main>
 		<section id="showcase">
@@ -73,25 +74,25 @@
 			</nav>
 		</section>
 		<div class="clear"></div>
-		<section id="uitgelicht">
+		<section id="uitgelicht" class="sect">
 			<h2>Uitgelicht</h2>
 			<div class="image3">
 				<div class="imgitem">
-					<img src="wash.jpg">
+					<img src="1.jpg">
 					<span>© NIAID</span>
 					<h3>Coronavirus COVID- 19</h3>
 					<p>
                     Actuele informatie over&nbsp;de uitbraak van het virus. Vragen over het coronavirus? Bel&nbsp;0800-1351.</p>
                 </div>
                 <div class="imgitem">
-					<img src="sky.jpg">
+					<img src="2.jpg">
 					<span>© Hollandse Hoogte</span>
 					<h3>Coronavirus COVID- 19</h3>
 					<p>
                     Actuele informatie over&nbsp;de uitbraak van het virus. Vragen over het coronavirus? Bel&nbsp;0800-1351.</p>
                 </div>
                 <div class="imgitem">
-					<img src="sky.jpg">
+					<img src="3.jpg">
 					<h3>Coronavirus COVID- 19</h3>
 					<p>
                     Actuele informatie over&nbsp;de uitbraak van het virus. Vragen over het coronavirus? Bel&nbsp;0800-1351.</p>
@@ -99,7 +100,7 @@
 			</div>
 		</section>
 		<div class="clear"></div>
-		<section id="nieuws">
+		<section id="nieuws" class="sect">
 			<h2>Nieuws</h2>
 			<div class="image3">
 				<div class="imgitem">

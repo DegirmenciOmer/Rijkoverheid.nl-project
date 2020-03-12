@@ -10,6 +10,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color:#f3f3f3;
+	overflow-x: hidden;
 }
 
 p {
@@ -22,17 +23,24 @@ header {
 	margin-left: 45%;
 }
 
+/* https://codepen.io/mutedblues/pen/MmPNPG  //reference for hamburger nav menu// */
 #navbar {
 	background: #01689b;
 	display: flex;
 	justify-content: space-between;
-	padding: px;
+	padding-left: 10px;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
+#home {
+	display: flex;
+	justify-content: space-between;
+}
+
 #topmenu {
 	display: flex;
+	transition: max-height .2s ease-out;	
 }
 
 #topmenu li {
@@ -47,6 +55,45 @@ header {
 	border-bottom: .12rem solid #fff;
 }
 
+/* menu icon */
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.menu-icon .navicon:before {
+  top: 5px;
+}
+
+.menu-icon .navicon:after {
+  top: -5px;
+}
+
 #showcase {
 	padding: 12px;
 	background-image: url(wash.jpg);
@@ -54,14 +101,21 @@ header {
 	background-position-y: 40%;
 }
 
+#showcase p {
+	color: #fff;
+	transform: translate(4px, 12px);
+	font-size: 12px;
+}
+
+/*TASKLIST*/
+
 #tasklist {
-	float: left;
   width: 40.3%;
 	background: #fff;
 	line-height: 1.6em;
 	font-weight: bold;
 	color: #01689b;
-	padding-right: 5px;
+	padding: 5px;
 }
 
 #tasklist li:before {
@@ -78,15 +132,8 @@ header {
 	margin-left: 38px;
 }
 
-#showcase p {
-	color: #fff;
-	transform: translate(4px, 12px);
-	font-size: 12px;
-}
-
 .clear {
 	clear :both;
-	
 }
 
 #graynav {
@@ -110,6 +157,20 @@ header {
 #graynav h3 {
 	color: #01689b;
 }
+/*
+.sect:before {
+ content:"";
+ border-top:1px solid #e1e1e1;
+ width:calc(100% - 30px);
+ margin-left:15px;
+}
+*/
+
+.sect {
+ border-top:1px solid #e1e1e1;
+ width:calc(100% - 30px);
+ margin-left:15px;
+ }
 
 #uitgelicht {
 	margin: 0 50px 42px 50px;
@@ -118,7 +179,7 @@ header {
 .image3 {
 	display: flex;
 	flex-wrap: wrap;
-
+	margin:10px;
 }
 
 .image3 .imgitem {
@@ -233,3 +294,92 @@ footer .languages ul {
   	justify-content: space-evenly;
 }
 
+@media (max-width: 767px) {
+	#navbar {
+		flex-direction: column;
+	  align-items: flex-start;
+	}
+	
+	#home {
+	width: 100%;
+	justify-content: space-between;
+}
+	
+ #topmenu {
+	 flex-direction: column;
+	 align-items: flex-start;
+	 padding: 0 10px 0 0;
+	 transition: max-height .2s ease-out;	
+	 width: 100%
+
+	}
+	
+	#topmenu li {
+		margin-left: 0;
+    border-bottom: 1px solid #fff;
+		padding: 10px 0 10px 0;
+		width: 100%;
+	}
+	
+	#topmenu li:nth-child(1) {
+		border-top: 1px solid #fff;
+	}
+	#topmenu li:hover {
+		cursor: pointer;
+	}
+
+#navbar a:hover {
+	border-bottom: 90px;
+	}
+	
+	#tasklist {
+  width: 100%;
+	}
+	/* menu icon */
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.menu-icon .navicon:before {
+  top: 5px;
+}
+
+.menu-icon .navicon:after {
+  top: -5px;
+}
+	#graynav a  {
+		width: 100%;
+	}
+	
+	.image3 .imgitem {
+	width:50%;
+	}
+	
+	  
+}
