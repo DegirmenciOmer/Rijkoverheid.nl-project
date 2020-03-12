@@ -66,6 +66,20 @@ header {
   user-select: none;
 }
 
+
+.search-input {
+  background-color: #01689B;
+  width: 20%;
+  padding: 10px;
+  display: flex;
+}
+
+.search-box {
+  width: 88%;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
 .navicon {
   background: #333;
   display: block;
