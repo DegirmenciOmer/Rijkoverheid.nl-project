@@ -31,20 +31,39 @@ header {
 	padding-left: 10px;
 	align-items: center;
 	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+	}
 }
 
 #home {
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
 }
 
 #topmenu {
 	display: flex;
 	transition: max-height .2s ease-out;	
+	flex-direction: column;
+	 align-items: flex-start;
+	 padding: 0 10px 0 0;
+	 width: 100%
 }
 
 #topmenu li {
-	margin-left: 25px;
+		margin-left: 0;
+    border-bottom: 1px solid #fff;
+		padding: 10px 0 10px 0;
+		width: 100%;
+}
+
+#topmenu li:nth-child(1) {
+		border-top: 1px solid #fff;
+	}
+
+#topmenu li:hover {
+		cursor: pointer;
 }
 
 #navbar a {
@@ -110,7 +129,7 @@ header {
 /*TASKLIST*/
 
 #tasklist {
-  width: 33.3%;
+  width: 100%;
 	background: #fff;
 	line-height: 1.6em;
 	font-weight: bold;
@@ -154,7 +173,7 @@ header {
 }
 
 #graynav a {
-	width: 31.3%;
+	width: 100%;
 	margin: 5px 1% 5px 1%;
 }
 
@@ -184,7 +203,7 @@ header {
 }
 
 .image3 .imgitem {
-	width:33.3%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -233,50 +252,67 @@ header {
 
 .boxes {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
  
  .box {
  	border: 2px solid rgba(1, 85, 127,.4);
- 	margin-left: 30px; 
- 	width: 250px;
+ 	width: 90%;
  	display: flex;
  	justify-content: center;
  	align-items: center;
  	flex-flow: column wrap; 
- 	line-height: 2rem;	
+ 	line-height: 2rem;
+	margin-top: 5px;
+	 padding: 4vw 0 4vw 0;
+	 height: 52vw;	 
  }
 
 .box #vra {
 	color: #01689b;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 9vw;
 }
 
 .bel {
-	font-size: 26px;
+	font-size: 8vw;
 }
 
 .box #num {
 	color: #01689b;
 	font-weight: bolder;
-	font-size: 34px;
+	font-size: 10vw;
+	margin-top:2vw
 }
 
 .box #mel {
-	font-size: 22px;
-	margin-bottom: 3vw
+	font-size: 7vw;
+	margin-bottom: 6vw;
 }
 
 .box .nie {
 	color: #a90061;
 	font-weight: bolder;
-	font-size: 34px;
+	font-size: 10vw;
+	margin-top: 2vw;
+	letter-spacing: -.3vw;
 }
 
 footer {
-	padding-top: 50px;
+	margin-top: 80px;
 	padding-bottom: 50px;
 }
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	border-bottom: 1px solid #fff;
+}
+
 footer .wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -285,6 +321,16 @@ footer .wrapper {
 	justify-content: space-around;
 }
 
+footer .wrapper span {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.wrapper .column {
+	width: 49%;
+	
+	
+}
 
 footer .languages ul {
 	background: #fff;
@@ -294,7 +340,7 @@ footer .languages ul {
   	justify-content: space-evenly;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 992px) {
 	#graynav a{
 		width: 48%;
 	} 
@@ -309,96 +355,12 @@ footer .languages ul {
 	
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
 	#navbar {
-		flex-direction: column;
-	  align-items: flex-start;
+		
 	}
 	
 	#home {
-	width: 100%;
-	justify-content: space-between;
-}
 	
- #topmenu {
-	 flex-direction: column;
-	 align-items: flex-start;
-	 padding: 0 10px 0 0;
-	 transition: max-height .2s ease-out;	
-	 width: 100%
-
-	}
-	
-	#topmenu li {
-		margin-left: 0;
-    border-bottom: 1px solid #fff;
-		padding: 10px 0 10px 0;
-		width: 100%;
-	}
-	
-	#topmenu li:nth-child(1) {
-		border-top: 1px solid #fff;
-	}
-	#topmenu li:hover {
-		cursor: pointer;
-	}
-
-#navbar a:hover {
-	border-bottom: 90px;
-	}
-	
-	#tasklist {
-  width: 100%;
-	}
-	/* menu icon */
-
-.menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
 }
 
-.navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.menu-icon .navicon:before,
-.menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.menu-icon .navicon:before {
-  top: 5px;
-}
-
-.menu-icon .navicon:after {
-  top: -5px;
-}
-	#graynav a  {
-		width: 100%;
-	}
-	
-	.image3 .imgitem {
-	width:50%;
-	}		  
-}
-
-@media (max-width: 479px) {
-.image3 .imgitem {
-	width: 100%;
-	}		
-}
