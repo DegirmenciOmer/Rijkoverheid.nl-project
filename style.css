@@ -9,7 +9,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color:#f3f3f3;
+	background-color:#fff;
 	overflow-x: hidden;
 }
 
@@ -110,12 +110,12 @@ header {
 /*TASKLIST*/
 
 #tasklist {
-  width: 40.3%;
+  width: 33.3%;
 	background: #fff;
 	line-height: 1.6em;
 	font-weight: bold;
 	color: #01689b;
-	padding: 5px;
+	padding: 4px 0 5px 0;
 }
 
 #tasklist li:before {
@@ -129,7 +129,11 @@ header {
 }
 
 #tasklist h2 {
-	margin-left: 38px;
+	color:#000;
+	font-size:1.3em;
+	line-height:1.875rem;
+	font-weight: normal;
+	margin-left: 16px;
 }
 
 .clear {
@@ -137,7 +141,7 @@ header {
 }
 
 #graynav {
-	background: #ededf0;
+	background: #f3f3f3;
 	position: relative;
 	top: -15px;
 	margin: -1px -22px 40px -22px;
@@ -156,6 +160,8 @@ header {
 
 #graynav h3 {
 	color: #01689b;
+	margin-top: 15px;
+	margin-bottom: 0;
 }
 /*
 .sect:before {
@@ -168,46 +174,40 @@ header {
 
 .sect {
  border-top:1px solid #e1e1e1;
- width:calc(100% - 30px);
- margin-left:15px;
+	margin: 10px;
  }
-
-#uitgelicht {
-	margin: 0 50px 42px 50px;
-}
 
 .image3 {
 	display: flex;
 	flex-wrap: wrap;
-	margin:10px;
+	
 }
 
 .image3 .imgitem {
 	width:33.3%;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
-	padding:0 15px 10px 15px;
+	padding: 0 15px 0px 15px;
+  margin-bottom: 40px;
 }
 
 .image3 h3 {
 	color: #01689b;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	line-height: 2rem;
-
+	font-weight: normal;
+	margin: 0;
 }
+
 .imgitem img {
-	height: 250px;
+	height: 200px;
 }
 #uitgelicht .image3 .imgitem span {
 	position:relative;
 	top: -30px;
 	left: 15px;
 	color: #fff;
-}
-
-#nieuws {
-	margin: 0 50px 42px 50px;
-
 }
 
 .more {
@@ -292,6 +292,21 @@ footer .languages ul {
 	display: flex;
 	align-items: center;
   	justify-content: space-evenly;
+}
+
+@media (max-width: 991px) {
+	#graynav a{
+		width: 48%;
+	} 
+	
+	.image3 .imgitem {
+	width:50%;
+	}
+	
+	.imgitem img {
+	height: 250px;
+	}
+	
 }
 
 @media (max-width: 767px) {
@@ -379,7 +394,11 @@ footer .languages ul {
 	
 	.image3 .imgitem {
 	width:50%;
-	}
-	
-	  
+	}		  
+}
+
+@media (max-width: 479px) {
+.image3 .imgitem {
+	width: 100%;
+	}		
 }
