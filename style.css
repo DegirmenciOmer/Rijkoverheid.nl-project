@@ -147,6 +147,7 @@ header {
 	background-image: url(wash.jpg);
 	background-size: cover;
 	background-position-y: 40%;
+transform: translate(0px, -17px);
 }
 
 #showcase p {
