@@ -144,16 +144,19 @@ header {
 
 #showcase {
 	padding: 53px;
-	background-image: url(wash.jpg);
+	background-image: url(./assets/wash.jpg);
 	background-size: cover;
 	background-position-y: 40%;
 transform: translate(0px, -17px);
+width: 100%
 }
 
 #showcase p {
 	color: #fff;
-	transform: translate(4px, 12px);
-	font-size: 12px;
+margin-bottom: 20px;	
+position: relative;
+top: 65px; right: 45px;
+font-size: 9px;
 }
 
 /*TASKLIST*/
@@ -535,7 +538,10 @@ footer .languages ul {
 	
 	.imgitem img {
 	height: 200px;
-	}	
+	}
+	
+	#showcase {
+	margin-top:17px;	}
 }
 /*
 @media (min-width: 1200px) {
